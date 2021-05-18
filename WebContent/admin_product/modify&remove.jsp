@@ -9,11 +9,11 @@
     <title>상품 수정/삭제</title>
 
     <!-- bootstrap -->
-    <link href="http://localhost/jsp_prj/common/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://localhost/TeamProject2/common/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery CDN(Contents Delivery Network) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- bootstrap -->
-<script src="http://localhost/jsp_prj/common/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://localhost/TeamProject2/common/bootstrap/js/bootstrap.min.js"></script>
 
 <style type="text/css">
 div{border:1px solid #333}
@@ -29,11 +29,13 @@ div{border:1px solid #333}
 /* sidemenu시작 */
 #sidemenu{width:300px;height:800px;float:left;}
 /* sidemenu끝 */
-td,th{text-align:center;}
+
+th{text-align:center;width:200px;background-color:#909090;}
+td{text-align:center;width:400px;}
 /* 상품이미지 */
-#prodImg{width:500px;height:550px;position:relative;top:100px;left:400px;}
+#prodImg{width:500px;height:550px;position:relative;top:100px;left:380px;}
 /* 상품정보 */
-#prodDetails{width:500px;height:550px;position:absolute;left:1000px;top:300px;}
+#prodDetails{width:600px;height:550px;position:relative;left:650px;bottom:450px;}
 </style>
 <script type="text/javascript">
 
@@ -43,7 +45,7 @@ td,th{text-align:center;}
 <div id="wrap">
 
 	<div id="header">
-		<div id="headerTitle">관리자 페이지</div>
+		<div id="headerTitle">SANGHAUI STREET ADMINISTRATOR</div>
 		<div id="logo"><img src="http://localhost/html_prj/common/images/%ED%8F%AC%EC%B1%A0%EC%BD%941.jpg"style="width:200px;height:200px;"></div>
 	</div>
 	<div id="container">
@@ -62,12 +64,29 @@ td,th{text-align:center;}
 				<div id="prodImg">
 				상품이미지			
 				</div>
-				<div id="prodDetails">
-				상품정보
-				</div>
+							<table id="prodDetails" class="table table-bordered">
+					<tr>
+						<th>상품번호</th><td></td>				
+					</tr>
+					<tr>
+						<th>상품명</th><td></td>				
+					</tr>
+					<tr>
+						<th>가격</th><td></td>				
+					</tr>
+					<tr>
+						<th>구분</th><td></td>				
+					</tr>
+					<tr>
+						<th style="height:150px;">사이즈</th><td></td>				
+					</tr>
+					<tr>
+						<th>상품설명</th><td></td>				
+					</tr>
+				</table>
 			
-			<input type="button" value="수정" class="btn btn-primary btn-lg" style="position:relative;left:1050px;top:130px;"/>
-			<input type="button" value="삭제" class="btn btn-primary btn-lg" style="position:relative;left:1100px;top:130px;"/>
+			<input type="button" value="수정" class="btn btn-primary btn-lg" style="position:relative;left:1300px;bottom:400px;"/>
+			<input type="button" value="삭제" class="btn btn-primary btn-lg" style="position:relative;left:1400px;bottom:400px;"/>
 			
 	
 	

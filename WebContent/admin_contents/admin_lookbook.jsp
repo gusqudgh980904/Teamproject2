@@ -9,11 +9,11 @@
     <title>게시판관리</title>
 
     <!-- bootstrap -->
-    <link href="http://localhost/jsp_prj/common/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://localhost/TeamProject2/common/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery CDN(Contents Delivery Network) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- bootstrap -->
-<script src="http://localhost/jsp_prj/common/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://localhost/TeamProject2/common/bootstrap/js/bootstrap.min.js"></script>
 
 <style type="text/css">
 div{border:1px solid #333}
@@ -30,7 +30,8 @@ img{width:200px;height:200px;}
 /* sidemenu시작 */
 #sidemenu{width:300px;height:800px;float:left;}
 /* sidemenu끝 */
-td,th{text-align:center;}
+td{text-align:center;}
+th{text-align:center;background-color:#909090}
 
 </style>
 <script type="text/javascript">
@@ -41,7 +42,7 @@ td,th{text-align:center;}
 <div id="wrap">
 
 	<div id="header">
-		<div id="headerTitle">관리자 페이지</div>
+		<div id="headerTitle">SANGHAUI STREET ADMINISTRATOR</div>
 		<div id="logo"><img src="http://localhost/html_prj/common/images/%ED%8F%AC%EC%B1%A0%EC%BD%941.jpg"></div>
 	</div>
 	<div id="container">
