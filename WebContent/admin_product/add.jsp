@@ -20,8 +20,8 @@ div{border:1px solid #333}
 #wrap{width:1600px;height:1000px;margin:0px auto;}
 /* header시작 */
 #header{width:1600px;height:200px;}
-#headerTitle{width:600px;height:150px;position:absolute;top:25px;left:650px;}
-#logo{height:200px;}
+#headerTitle{width:700px;height:90px;position:relative;top:50px;left:570px;text-align:center}
+#logo{width:100px;height:200px;position:relative;bottom:120px;}
 /* header끝 */
 /* container시작 */
 #container{width:1600px;height:800px;float:right;}
@@ -44,22 +44,22 @@ td{text-align:center;width:400px;}
 <body>
 <div id="wrap">
 
-	<div id="header">
-		<div id="headerTitle">SANGHAUI STREET ADMINISTRATOR</div>
-		<div id="logo"><img src="http://localhost/html_prj/common/images/%ED%8F%AC%EC%B1%A0%EC%BD%941.jpg"style="width:200px;height:200px;"></div>
+		<div id="header">
+		<a href="http://localhost/TeamProject2/admin_contents/admin_main.jsp"><h1 id="headerTitle">SANGHAUI STREET ADMINISTRATOR</h1></a>
+		<div  id="logo"><img src="http://localhost/html_prj/common/images/%ED%8F%AC%EC%B1%A0%EC%BD%941.jpg"></div>
 	</div>
 	<div id="container">
 	
 		<div id="sidemenu">
 			<ul><span style="font-size:20px;font-weghit:bold">회원</span>
-				<li>회원목록</li>	
-				<li>게시만목록</li>	
+				<a href="http://localhost/TeamProject2/admin_contents/admin_users.jsp"><li>회원목록</li></a>	
+				<a href="http://localhost/TeamProject2/admin_contents/admin_lookbooks.jsp"><li>게시판목록</li></a>		
 			</ul>
 			<ul><span style="font-size:20px;font-weghit:bold">상품</span>
-				<li>상품관리</li>	
+				<a href="http://localhost/TeamProject2/admin_contents/admin_main.jsp"><li>상품관리</li></a>
 			</ul>
 		</div>
-			<h1 style="float:left"><span>▶</span>삭제/수정</h1>
+			<h1 style="float:left"><span>▶</span>상품추가</h1>
 			
 				<div id="prodImg">
 				상품이미지			
