@@ -36,7 +36,9 @@ th{text-align:center;width:600px;background-color:#909090}
 #details{width:1200px;height:600px;position:relative;top:50px;left:50px}
 </style>
 <script type="text/javascript">
-
+function confirm(){
+	window.open("http://localhost/TeamProject2/common/login/popup/user_delete.jsp","confirm","width=650,height=380px")
+}//confirm
 </script>
 </head>
 <body>
@@ -49,12 +51,12 @@ th{text-align:center;width:600px;background-color:#909090}
 	<div id="container">
 	
 		<div id="sidemenu">
-			<ul><span style="font-size:20px;font-weghit:bold">회원</span>
-				<a href="http://localhost/TeamProject2/admin_contents/admin_users.jsp"><li>회원목록</li></a>	
-				<a href="http://localhost/TeamProject2/admin_contents/admin_lookbooks.jsp"><li>게시판목록</li></a>	
+					<ul><span style="font-size:20px;font-weghit:bold">회원</span>
+				<li><a href="http://localhost/TeamProject2/admin_contents/admin_users.jsp">회원목록</a></li>
+				<li><a href="http://localhost/TeamProject2/admin_contents/admin_lookbooks.jsp">게시판목록</a></li>
 			</ul>
 			<ul><span style="font-size:20px;font-weghit:bold">상품</span>
-				<a href="http://localhost/TeamProject2/admin_contents/admin_main.jsp"><li>상품관리</li></a>
+				<li><a href="http://localhost/TeamProject2/admin_contents/admin_main.jsp">상품관리</a></li>
 			</ul>
 		</div>
 			<h1 style="float:left"><span>▶</span>~~님 회원정보</h1>
@@ -96,7 +98,7 @@ th{text-align:center;width:600px;background-color:#909090}
 				
 				</table>
 			
-			<input type="button" value="탈퇴" class="btn btn-primary btn-lg" style="position:relative;left:1100px;top:50px"/>
+			<input type="button" value="탈퇴" class="btn btn-primary btn-lg" style="position:relative;left:1100px;top:50px" onclick="confirm()"/>
 			
 	
 	
