@@ -7,29 +7,27 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code,
 	padding: 0
 }
 
-fieldset, img {
-	border: 0 none;
-}
-
-hr{
-	display:none
-}
-
-dl, ul, ol, li {
-	list-style: none;
-}
-
 input, select, textarea, button {
 	border-radius: 0;
 	vertical-align: middle
 }
 
+hr{ 
+	display: none
+}
+
 body, th, td, input, select, textarea, button {
 	font-size: 13px;
 	line-height: 1.5;
-	font-family: '맑은 고딕', dotum, '돋움', sans-serif;
+	font-family: AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum,
+		'돋움', sans-serif;
 	color: #222;
 	letter-spacing: -1px
+}
+
+input, select, textarea, button {
+	border-radius: 0;
+	vertical-align: middle
 }
 
 a {
@@ -43,24 +41,26 @@ a:hover {
 }
 
 .btn {
-	border: 1px solid #e9e9e9;
-	height: 32px;
-	background-color: #ffffff;
-	padding-right: 7px;
+	border: 1px solid #E9E9E9;
+	background-color: #FFFFFF;
 	padding-left: 7px;
-	font-weight: bold;
-	cursor: pointer;
+	padding-right: 7px;
+	height: 30px;
+	font-weight: bold
 }
 
 .inputBox {
-	border: 1px solid #e9e9e9;
-	height: 30px;
-	background-color: #ffffff;
-	padding-right: 7px;
+	border: 1px solid #E9E9E9;
+	background-color: #FFFFFF;
 	padding-left: 7px;
+	padding-right: 7px;
+	height: 30px;
 }
 
+/* td {
+	height: 40px;
+} */
 
 .point {
-	color: red;
+	color: #FF0000
 }

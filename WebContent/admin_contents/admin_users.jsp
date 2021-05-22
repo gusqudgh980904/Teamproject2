@@ -7,7 +7,12 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>회원관리</title>
-<link rel="stylesheet" type="text/css" href="http://localhost/TeamProject2/common/css/admin.css"/>
+
+	 <!-- YL CSS -->
+   <link href="http://localhost/TeamProject2/common/css/yl_main.css" rel="stylesheet" >
+   <!-- 학원 CSS -->
+   <link rel="stylesheet" type ="text/css" href ="http://localhost/TeamProject2/common/css/main.css"/>
+   
     <!-- bootstrap -->
     <link href="http://localhost/TeamProject2/common/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery CDN(Contents Delivery Network) -->
@@ -16,22 +21,41 @@
 <script src="http://localhost/TeamProject2/common/bootstrap/js/bootstrap.min.js"></script>
 
 <style type="text/css">
-div{border:1px solid #333}
-#wrap{width:1600px;height:1000px;margin:0px auto;}
-/* header시작 */
-#header{width:1600px;height:200px;margin:0px auto;}
-#headerTitle{width:700px;height:90px;position:relative;top:50px;left:570px;text-align:center}
-#logo{width:200px;height:200px;border:0px;position:relative;bottom:120px;}
-/* header끝 */
-/* container시작 */
-#container{width:1600px;height:800px;float:right;}
-/* container끝 */
-/* sidemenu시작 */
-#sidemenu{width:300px;height:800px;float:left;}
-/* sidemenu끝 */
-td{text-align:center;}
-th{text-align:center;background-color:#909090;}
-li{font-size:24px;}
+.header{
+	z-index: 1;
+	position:relative;
+}
+.title{
+	margin-top : 20px;
+}
+
+.navigation {
+	margin-left : 10px;
+}
+#headerTitle {
+	margin-top : 100px;
+	margin-left : 400px;
+}
+
+#wrap {
+	width: 1250px;
+	height: 900px;
+	margin: 0px auto;
+	background-color: #dfdfdf;
+}
+#container{
+	margin-top: -100px;
+}
+	
+td {
+	text-align: center;
+}
+
+th {
+	text-align: center;
+	background-color: #909090
+}
+
 
 </style>
 <script type="text/javascript">
@@ -39,26 +63,26 @@ li{font-size:24px;}
 </script>
 </head>
 <body>
+<!-- header start -->
+    <header class="header">
+        <div class="main_nav">
+            <div>
+                <h1 class="title"><a href="#"><img src="http://localhost/TeamProject2/common/images/%EC%83%81%ED%95%98%EC%9D%98%EC%8A%A4%ED%8A%B8%EB%A6%BF.png"></a></h1>
+                <ul class="navigation">
+                    <li> <a href="" style="color: black">메인홈</a></li>
+                    <li><a href="http://localhost/TeamProject2/admin_contents/admin_users.jsp" style="color: black">회원목록</a></li>
+                    <li><a href="http://localhost/TeamProject2/admin_contents/admin_lookbooks.jsp" style="color: black">게시판목록</a></li>
+                    <li><a href="http://localhost/TeamProject2/admin_contents/admin_main.jsp" style="color: black">상품관리</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
 <div id="wrap">
-
-		<div id="header">
-		<a href="http://localhost/TeamProject2/admin_contents/admin_main.jsp"><h1 id="headerTitle">SANGHAUI STREET ADMINISTRATOR</h1></a>
-		<div  id="logo"><img src="http://localhost/TeamProject2/common/images/%EC%83%81%ED%95%98%EC%9D%98%EC%8A%A4%ED%8A%B8%EB%A6%BF.png"style="margin-top:80px"/></div>
-	</div>
 	<div id="container">
-	
-		<div id="sidemenu">
-				<ul><span style="font-size:20px;font-weghit:bold">회원</span>
-				<li><a href="http://localhost/TeamProject2/admin_contents/admin_users.jsp">회원목록</a></li>
-				<li><a href="http://localhost/TeamProject2/admin_contents/admin_lookbooks.jsp">게시판목록</a></li>
-			</ul>
-			<ul><span style="font-size:20px;font-weghit:bold">상품</span>
-				<li><a href="http://localhost/TeamProject2/admin_contents/admin_main.jsp">상품관리</a></li>
-			</ul>
-		</div>
-			<h1 style="float:left"><span>▶</span>회원관리</h1>
-			<table class="table table-bordered" style="width:1200px;height:600px;position:relative;left:20px;top:100px;">
-				<tr>
+			<table class="table table-bordered" style="width:1200px;height:500px;position:relative;left:20px;top:50px;">
+			<h1 id="headerTitle">SANGHAUI STREET ADMINISTRATOR</h1>
+					<tr>
 					<th>아이디</th>			
 					<th>이름</th>			
 					<th>성별</th>			
@@ -66,7 +90,7 @@ li{font-size:24px;}
 					<th>탈퇴여부</th>			
 				</tr>
 				<tr>
-					<td>sist1</td>
+					<td><a href="http://localhost/TeamProject2/admin_details/admin_user.jsp">sist1</a></td>
 					<td>현병호</td>
 					<td>남</td>
 					<td>sysdate</td>
@@ -100,12 +124,43 @@ li{font-size:24px;}
 					<td>sysdate</td>
 					<td>Y</td>
 				</tr>
-			
 			</table>
-	
-	
 	</div>
-
 </div>
+ <!-- footer start -->
+    <footer>
+        <div class="footer-wrap">
+            <div class="footer-content">
+                <h2>ABOUT SANGHAUI</h2>
+                <p>
+                    상하의스트릿 공식 온라인스토어는 ㈜쌍용교육센터의 콘텐츠를 위임받아 운영하고 있습니다. <br/>
+                    상하의스트릿 공식 온라인 스토어에서 사용하는 인증 마크를 훼손 또는 무단복제하여 사용할 수 없으며, <br/>
+                    해당 콘텐츠의 소유권은 SANGHAUI STREET ㈜쌍용교육센터에 있습니다.<br/>
+					Copyright © sanghaui street. All rights reserved.
+                </p>
+            </div>
+            <div class="footer-content">
+                <h2>CS CENTER</h2>
+                <ul>
+                    <li>업무시간 10:00 - 17:00</li>
+                    <li>점심시간 12:00 - 13:00</li>
+                    <li>휴무 토요일,일요일,공휴일</li>
+                    <li>현금 등으로 결제시 저희 쇼핑몰이 가입한</li>
+                    <li>PG에스크로 구매안전 서비스를 이용하실 수 있습니다</li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h2>OUR COMPANY</h2>
+                <ul>
+                    <li>회사명 : (주)쌍용교육센터</li>
+                    <li>사업자등록번호 : 2148529296</li>
+                    <li>통신판매업 신고 : 제 2021-서울쌍용-3333호</li>
+                    <li>주소 : 서울특별시 강남구 테헤란로 132(역삼동) </li>
+                    <li>한독약품빌딩 8층 쌍용교육센터</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
 </body>
 </html>
